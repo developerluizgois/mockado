@@ -1,0 +1,9 @@
+export const regexUserName = /^[a-z0-9]+$/
+export const regexFirstName = /^[A-Za-z]+$/
+export const regexFullName = /^[a-zA-Z]+(?:\s+[a-zA-Z]+)+$/
+export const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+export const regexPasswordDefault = /^[a-zA-Z0-9!@#$%^&*()_\-+=<>?]+$/
+export const regexPasswordWithLetters = /^[a-z]+$/
+export const regexPasswordWithCapitalLetters = /^[A-Z]+$/
+export const regexPasswordWithNumbers = /^[0-9]+$/
+export const regexPasswordWithSpecialCharacters = /^[!@#$%^&*()_\-+=<>?]+$/
