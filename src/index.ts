@@ -1,6 +1,6 @@
-import NameGenerator from "./generators/NameGenerator"
-import EmailGenerator from "./generators/EmailGenerator"
-import PasswordGenerator from "./generators/PasswordGenerator"
+import NameGenerator from "./generators/credentials/NameGenerator"
+import EmailGenerator from "./generators/credentials/EmailGenerator"
+import PasswordGenerator from "./generators/credentials/PasswordGenerator"
 
 const mockado = {
   name: NameGenerator.generateRandomName,
