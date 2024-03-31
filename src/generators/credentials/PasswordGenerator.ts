@@ -1,4 +1,4 @@
-class PasswordGenerator {
+export default class PasswordGenerator {
   static generateRandomPassword(options?: {
     letters?: boolean
     capitalLetters?: boolean
@@ -42,5 +42,3 @@ class PasswordGenerator {
     return password
   }
 }
-
-export default PasswordGenerator
