@@ -1,11 +1,11 @@
-import PasswordGenerator from "../../../src/generators/credentials/PasswordGenerator"
+import PasswordGenerator from "../../../../src/generators/credentials/PasswordGenerator"
 import {
   regexPasswordDefault,
   regexPasswordWithCapitalLetters,
   regexPasswordWithLetters,
   regexPasswordWithNumbers,
   regexPasswordWithSpecialCharacters,
-} from "../../../src/utils/Regex"
+} from "../../../../src/utils/Regex"
 
 describe("Test function to generate random passwords", () => {
   it("should generate a password with default options", () => {
