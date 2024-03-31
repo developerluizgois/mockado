@@ -1,9 +1,9 @@
-import NameGenerator from "../../../src/generators/credentials/NameGenerator"
+import NameGenerator from "../../../../src/generators/credentials/NameGenerator"
 import {
   regexFirstName,
   regexFullName,
   regexUserName,
-} from "../../../src/utils/Regex"
+} from "../../../../src/utils/Regex"
 
 describe("NameGenerator", () => {
   describe("generateRandomName", () => {

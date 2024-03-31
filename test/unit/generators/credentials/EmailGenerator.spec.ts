@@ -1,5 +1,5 @@
-import EmailGenerator from "../../../src/generators/credentials/EmailGenerator"
-import { regexEmail } from "../../../src/utils/Regex"
+import EmailGenerator from "../../../../src/generators/credentials/EmailGenerator"
+import { regexEmail } from "../../../../src/utils/Regex"
 
 describe("Tests when generating random email", () => {
   it("should generate a random email with default options", () => {
