@@ -1,8 +1,12 @@
 {
   "name": "mockado",
   "version": "1.0.0",
-  "description": "Generate large amounts of fake (but realistic) data for testing and development.",
-  "main": "index.js",
+  "description": "Have fictitious yet realistic data for your development tests or other needs.",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizfelipegois/mockado.git"
+  },
   "scripts": {
     "build": "tsc",
     "start": "node dist/src/index.js",
@@ -20,8 +24,18 @@
       "npm run test:staged"
     ]
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "fake data",
+    "fake",
+    "fake data generator",
+    "fake contextual data generator",
+    "fake content generator",
+    "fake contextual generator"
+  ],
+  "author": "luizfelipegois",
+  "bugs": {
+    "url": "https://github.com/luizfelipegois/mockado/issues"
+  },
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^29.5.12",
@@ -38,5 +52,6 @@
     "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.3"
-  }
+  },
+  "homepage": "https://github.com/luizfelipegois/mockado#readme"
 }
