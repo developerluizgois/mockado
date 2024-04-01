@@ -17,3 +17,9 @@ export const regexYYYY_MM_DD_HH_mm_ss = /^\d{4}-\d{2}-\d{2}\s\d{2}:\d{2}:\d{2}$/
 export const regexCPF = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/
 export const regexSSN = /^\d{3}-\d{2}-\d{4}$/
 export const regexSIN = /^\d{3}-\d{3}-\d{3}$/
+export const regexPhoneBRL = /^\+\d{2}\s\d{2}\s\d{5}-\d{4}$/
+export const regexPhoneEUA = /^\+\d \d{3} \d{3}-\d{4}$/
+export const regexCompleteAddress = /^(?=.*[A-Za-z0-9].*[^\s])[\s\S]{1,100}$/
+export const regexZipCode =
+  /^(\d{5}-\d{4}|\d{5}|\d{2}\.\d{3}-\d{3}|\d{5}-\d{3})$/
+export const regexCity = /^[A-Za-zÀ-ÖØ-öø-ÿ\s]+(?:[ '-][A-Za-zÀ-ÖØ-öø-ÿ\s]+)*$/
