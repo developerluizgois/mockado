@@ -6,14 +6,11 @@ import IdentificationGenerator from "./generators/personal/Identification"
 import PhoneNumberGenerator from "./generators/contact/PhoneGenerator"
 import LocationGenerator from "./generators/contact/LocationGenerator"
 
-const mockado = {
-  name: NameGenerator.generateRandomName,
-  email: EmailGenerator.generateRandomEmail,
-  password: PasswordGenerator.generateRandomPassword,
-  date: DateGenerator.generateRandomDOB,
-  identification: IdentificationGenerator.generateRandomIdentification,
-  phone: PhoneNumberGenerator.generateRandomPhoneNumber,
-  location: LocationGenerator.generateRandomAddress,
-}
-
-export default mockado
+export const name = NameGenerator.generateRandomName
+export const email = EmailGenerator.generateRandomEmail
+export const password = PasswordGenerator.generateRandomPassword
+export const date = DateGenerator.generateRandomDOB
+export const identification =
+  IdentificationGenerator.generateRandomIdentification
+export const phoneNumber = PhoneNumberGenerator.generateRandomPhoneNumber
+export const address = LocationGenerator.generateRandomAddress
