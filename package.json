@@ -1,8 +1,8 @@
 {
   "name": "mockado",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Have fictitious yet realistic data for your development tests or other needs.",
-  "main": "src/index.js",
+  "main": "dist/src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/luizfelipegois/mockado.git"

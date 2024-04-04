@@ -8,9 +8,11 @@ tests/
 spec/
 specs/
 *.md
-.husky
+.husky/
 coverage
 .eslintrc.json
-.prettierrs.json
+.prettierrc.json
 jest.config.js
 tsconfig.json
+src/
+data/
