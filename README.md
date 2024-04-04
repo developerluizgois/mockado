@@ -5,6 +5,9 @@
 
   <h1>Mockado</h1>
   <p>Have fictitious yet realistic data for your development tests or other needs.</p>
+  
+  [![npm version](https://badgen.net/npm/v/mockado)](https://www.npmjs.com/package/mockado)
+  [![npm downloads](https://badgen.net/npm/dm/mockado)](https://www.npmjs.com/package/mockado)
 </div>
 
 ## Built with
