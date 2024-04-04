@@ -1,0 +1,16 @@
+.ts
+.gitignore
+build/
+out/
+lib/
+test/
+tests/
+spec/
+specs/
+*.md
+.husky
+coverage
+.eslintrc.json
+.prettierrs.json
+jest.config.js
+tsconfig.json
