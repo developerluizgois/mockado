@@ -1,6 +1,6 @@
 {
   "name": "mockado",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Have fictitious yet realistic data for your development tests or other needs.",
   "main": "dist/src/index.js",
   "typings": "index.d.ts",
@@ -9,6 +9,7 @@
     "url": "git+https://github.com/luizfelipegois/mockado.git"
   },
   "scripts": {
+    "install": "npm install --save-dev mockado",
     "build": "tsc",
     "start": "node dist/src/index.js",
     "dev": "nodemon --watch 'src/' --exec 'ts-node src/index.ts' -e ts",
