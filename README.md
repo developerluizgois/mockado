@@ -42,12 +42,12 @@ npm install --save-dev mockado
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
-export function createRandomUser(): User {
+export function createRandomUser() {
   return {
     username: mockado.name({type: "username"}),
     email: mockado.email(),
@@ -65,10 +65,10 @@ Mockado always returns default data. To receive personalized data, you need to p
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const firstName = mockado.name({type: "firstName"});
 
@@ -81,10 +81,10 @@ console.log(`Hello my name is ${firstName}`);
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const firstName = mockado.name({type: "firstName", gender: "female"});
 
@@ -97,10 +97,10 @@ console.log(`Hello my name is ${firstName}`);
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const fullName = mockado.name({type: "fullName"});
 
@@ -113,10 +113,10 @@ console.log(`Hello my name is ${fullName}`);
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const username = mockado.name({type: "username"});
 
@@ -129,10 +129,10 @@ console.log(`Hi, my username is ${username}`);
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const email = mockado.email();
 
@@ -145,10 +145,10 @@ console.log(email);
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const email = mockado.email({type: "yahoo.com"});
 
@@ -161,10 +161,10 @@ console.log(email);
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const email = mockado.email({type: "yahoo.com", gender: "female"});
 
@@ -177,10 +177,10 @@ console.log(email);
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const password = mockado.password();
 
@@ -193,10 +193,10 @@ console.log(password);
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const password = mockado.password({
   letters: true,
@@ -215,10 +215,10 @@ console.log(password)
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const date = mockado.date();
 
@@ -231,10 +231,10 @@ console.log(date)
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const date = mockado.date({format: "DD MMM YYYY"});
 
@@ -247,10 +247,10 @@ console.log(date)
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const date = mockado.date({
   start: new Date(1995, 0, 1),
@@ -266,10 +266,10 @@ console.log(date)
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const identification = mockado.identification()
 
@@ -282,10 +282,10 @@ console.log(identification)
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const identification = mockado.identification("SSN")
 
@@ -298,10 +298,10 @@ console.log(identification)
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const phone = mockado.phone()
 
@@ -314,10 +314,10 @@ console.log(phone)
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const phone = mockado.phone({code: "EUA"})
 
@@ -330,10 +330,10 @@ console.log(phone)
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const location = mockado.location()
 
@@ -346,10 +346,10 @@ console.log(location)
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const location = mockado.location("street")
 
@@ -362,10 +362,10 @@ console.log(location)
 
 ```ts
 // ESM
-import { mockado } from 'mockado';
+import mockado from 'mockado';
 
 // CJS
-const { mockado } = require('mockado');
+const mockado = require('mockado');
 
 const location = mockado.location("zipCode")
 
