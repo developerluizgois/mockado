@@ -22,7 +22,7 @@ export default class NameGenerator {
     if (options && options.type) {
       if (options.type === "username") {
         const username = response.split(" ")[0].toLowerCase()
-        response = NameGenerator.generateUsername(username) // Correção aqui
+        response = NameGenerator.generateUsername(username)
       } else if (options.type === "fullName") {
         const lastName = Randomizer.getRandomElementFromArray(lastNames)
         response += " " + lastName

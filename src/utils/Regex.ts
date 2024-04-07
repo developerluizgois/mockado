@@ -2,11 +2,12 @@ export const regexUserName = /^[a-z0-9]+$/
 export const regexFirstName = /^[A-Za-z]+$/
 export const regexFullName = /^[a-zA-Z]+(?:\s+[a-zA-Z]+)+$/
 export const regexEmail = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
-export const regexPasswordDefault = /^[a-zA-Z0-9!@#$%^&*()_\-+=<>?]+$/
+export const regexPasswordDefault = /^[a-zA-Z0-9!@#$%^&*()_+\-=<>?]+$/
 export const regexPasswordWithLetters = /^[a-z]+$/
 export const regexPasswordWithCapitalLetters = /^[A-Z]+$/
 export const regexPasswordWithNumbers = /^[0-9]+$/
-export const regexPasswordWithSpecialCharacters = /^[!@#$%^&*()_\-+=<>?]+$/
+export const regexPasswordWithSpecialCharacters =
+  /^[!@#$%^&*()_\-+=<>?[\]{}|,.:;'"`~]+$/
 export const regexYYYY_MM_DD = /^\d{4}-\d{2}-\d{2}$/
 export const regexDD_MM_YYYY = /^\d{2}\/\d{2}\/\d{4}$/
 export const regexMM_DD_YYYY = /^\d{2}\/\d{2}\/\d{4}$/

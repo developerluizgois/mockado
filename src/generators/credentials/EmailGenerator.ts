@@ -1,15 +1,23 @@
 import NameGenerator from "./NameGenerator"
 import { Randomizer } from "../../utils/Randomizer"
+import { Formatter } from "../../utils/Formatter"
 
 export default class EmailGenerator {
   static generateRandomEmail(options?: {
     type?: "gmail.com" | "hotmail.com" | "outlook.com" | "yahoo.com"
     gender?: "male" | "female"
+    number?: boolean
   }): string {
-    const username = NameGenerator.generateRandomName({
+    const fullName = NameGenerator.generateRandomName({
       gender: options?.gender || "male",
-      type: "username",
+      type: "fullName",
     })
+
+    let formattedFullname = Formatter.formatString(fullName)
+
+    if (options && options.number) {
+      formattedFullname = formattedFullname + Randomizer.getRandomInt(1, 10000)
+    }
 
     let domain: string
     if (options && options.type) {
@@ -19,6 +27,6 @@ export default class EmailGenerator {
       domain = Randomizer.getRandomElementFromArray(domains)
     }
 
-    return `${username}@${domain}`
+    return `${formattedFullname}@${domain}`
   }
 }
