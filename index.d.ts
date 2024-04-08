@@ -18,6 +18,7 @@ declare module "mockado" {
             | "yahoo.com"
             | undefined
           gender?: "male" | "female" | undefined
+          numbers?: boolean | undefined
         }
       | undefined,
   ) => string

@@ -6,7 +6,7 @@ export default class EmailGenerator {
   static generateRandomEmail(options?: {
     type?: "gmail.com" | "hotmail.com" | "outlook.com" | "yahoo.com"
     gender?: "male" | "female"
-    number?: boolean
+    numbers?: boolean
   }): string {
     const fullName = NameGenerator.generateRandomName({
       gender: options?.gender || "male",
@@ -15,7 +15,7 @@ export default class EmailGenerator {
 
     let formattedFullname = Formatter.formatString(fullName)
 
-    if (options && options.number) {
+    if (options && options.numbers) {
       formattedFullname = formattedFullname + Randomizer.getRandomInt(1, 10000)
     }
 
