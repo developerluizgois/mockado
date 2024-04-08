@@ -1,7 +1,7 @@
 import { Randomizer } from "../../utils/Randomizer"
 
 export default class PhoneNumberGenerator {
-  static generateRandomPhoneNumber(options?: { code?: "EUA" | "BRL" }): string {
+  static generateRandomPhoneNumber(options?: { code?: "EUA" | "BRA" }): string {
     let countryCode: string
     let operatorCode: string
     let areaCode: string
