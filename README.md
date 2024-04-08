@@ -265,38 +265,6 @@ console.log(date)
 // 2011-10-11
 ```
 
-### Identification
-
-```ts
-// ESM
-import mockado from 'mockado';
-
-// CJS
-const mockado = require('mockado');
-
-const identification = mockado.identification()
-
-console.log(identification)
-
-// 719.705.559-80
-```
-
-### Identification with specified top
-
-```ts
-// ESM
-import mockado from 'mockado';
-
-// CJS
-const mockado = require('mockado');
-
-const identification = mockado.identification("SSN")
-
-console.log(identification)
-
-// 705-33-0284
-```
-
 ### Phone number
 
 ```ts

@@ -73,7 +73,7 @@ describe("Test function to generate random passwords", () => {
     const password = PasswordGenerator.generateRandomPassword(options)
     expect(password.length).toBe(options.length)
     expect(password).toMatch(
-      /^(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*()\-_=+[\]{}|;:,.<>?]).{8,}$/,
+      /^(?=.*[0-9])(?=.*[!@#$%^&*()[\]{}|;:,.<>?=-_+])[A-Z0-9!@#$%^&*()[\]{}|;:,.<>?=-_+]+$/,
     )
   })
 })
