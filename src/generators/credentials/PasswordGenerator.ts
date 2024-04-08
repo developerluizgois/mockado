@@ -18,7 +18,7 @@ export default class PasswordGenerator {
       letters: "abcdefghijklmnopqrstuvwxyz",
       capitalLetters: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
       numbers: "0123456789",
-      specialCharacters: "!@#$%^&*()-_=+[]{}|;:,.<>?",
+      specialCharacters: "!@#$%^&*()[]{}|;:,.<>?=-_+",
     }
 
     options = { ...defaultOptions, ...options }
