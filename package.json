@@ -1,6 +1,6 @@
 {
   "name": "mockado",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Have fictitious yet realistic data for your development tests or other needs.",
   "main": "dist/src/index.js",
   "typings": "index.d.ts",
