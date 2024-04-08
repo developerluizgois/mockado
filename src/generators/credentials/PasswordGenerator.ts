@@ -18,7 +18,7 @@ export default class PasswordGenerator {
       letters: "abcdefghijklmnopqrstuvwxyz",
       capitalLetters: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
       numbers: "0123456789",
-      specialCharacters: "!@#$%^&*()[]{}|;:,.<>?=-_+",
+      specialCharacters: "@$!%*?;/&",
     }
 
     options = { ...defaultOptions, ...options }
@@ -32,52 +32,48 @@ export default class PasswordGenerator {
 
     let password = ""
 
-    // Adiciona um caractere minúsculo, se letters for true e capitalLetters for false
+    // Add a lowercase character, if letters is true and capitalLetters is false
     if (options.letters && !options.capitalLetters) {
       password += charset.letters.charAt(
         Math.floor(Math.random() * charset.letters.length),
       )
     }
 
-    // Adiciona um caractere maiúsculo, se capitalLetters for true
+    // Add an uppercase character, if capitalLetters is true
     if (options.capitalLetters) {
       password += charset.capitalLetters.charAt(
         Math.floor(Math.random() * charset.capitalLetters.length),
       )
     }
 
-    // Adiciona um número, se numbers for true
+    // Add a number, if numbers is true
     if (options.numbers) {
       password += charset.numbers.charAt(
         Math.floor(Math.random() * charset.numbers.length),
       )
     }
 
-    // Adiciona um caractere especial, se specialCharacters for true
+    // Add a special character, if specialCharacters is true
     if (options.specialCharacters) {
       password += charset.specialCharacters.charAt(
         Math.floor(Math.random() * charset.specialCharacters.length),
       )
     }
 
-    // Preenche o restante da senha com caracteres aleatórios
-    for (
-      let i = options.letters && !options.capitalLetters ? 4 : 3;
-      i < options.length!;
-      i++
-    ) {
+    // Fill the rest of the password with random characters
+    for (let i = password.length; i < options.length!; i++) {
       password += availableCharset.charAt(
         Math.floor(Math.random() * availableCharset.length),
       )
     }
 
-    // Embaralha a senha para garantir a aleatoriedade
+    // Shuffle the password to ensure randomness
     password = PasswordGenerator.shuffleString(password)
 
     return password
   }
 
-  // Função para embaralhar uma string
+  // Function to shuffle a string
   private static shuffleString(str: string): string {
     const array = str.split("")
     for (let i = array.length - 1; i > 0; i--) {
