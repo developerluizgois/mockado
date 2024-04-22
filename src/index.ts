@@ -5,9 +5,13 @@ import DateGenerator from "./generators/personal/Date"
 import PhoneNumberGenerator from "./generators/contact/PhoneGenerator"
 import LocationGenerator from "./generators/contact/LocationGenerator"
 
-export const name = NameGenerator.generateRandomName
-export const email = EmailGenerator.generateRandomEmail
-export const password = PasswordGenerator.generateRandomPassword
-export const date = DateGenerator.generateRandomDOB
-export const phoneNumber = PhoneNumberGenerator.generateRandomPhoneNumber
-export const address = LocationGenerator.generateRandomAddress
+const mockado = {
+  name: NameGenerator.generateRandomName,
+  email: EmailGenerator.generateRandomEmail,
+  password: PasswordGenerator.generateRandomPassword,
+  date: DateGenerator.generateRandomDOB,
+  phoneNumber: PhoneNumberGenerator.generateRandomPhoneNumber,
+  address: LocationGenerator.generateRandomAddress,
+}
+
+export default mockado
